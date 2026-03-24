@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kayıt Ol Ekranı</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Ekran üzerinde yer alan öğeler için css vermemi sağlamak amaçlı bir yönlendirme yapıyorum.-->
+</head>
+<body class="bg-success">
+    <div class="container"> <!-- Kapsama amacıyla div etiketinin sınıfını container yapıyorum-->
+        <form action=""> <!-- Form yapısı oluşturduğum için ise form etiketini kullanıyorum-->
+            <h1 class="text-center">Kayıt Ol Ekranı</h1> 
+            <div class="col-md-8 col-md-offset-2">
+                <br/>
+                <!--Kullanıcıdan veri alabilmek için girdilerimizi oluşturalım ve id'ler ile placeholder'lerimizi verelim-->
+                <input type="text" class="form-control" name="" id="isim" placeholder="İsim Giriniz"><br/>
+                <input type="text" class="form-control" name="" id="soyisim" placeholder="Soyisim Giriniz"><br/>
+                <input type="text" class="form-control" name="" id="yas" placeholder="Yaş Giriniz"><br/>            
+                <input type="email" class="form-control" name="" id="eposta" placeholder="E-Posta Giriniz"><br />
+                <input type="password" class="form-control" name="" id="parola" placeholder="Parola Giriniz"><br />
+                <center>
+                <button type="button" onclick="kayitOl()" class="btn-success"> Kayıt Ol </button><br /><br /> <!--Butona basıldığında kayitOl fonksiyonu çalışacak-->
+                <a href="./girisYapEkrani.html" target="_self"><!--girişyapekranına gitmesi için butona link veriyorum ve 
+                                                                Mevcut ekran üzerinde açılması için target'ini self yapıyorum.-->
+                <button type="button" onclick="" class="form-control btn btn-primary"> Giriş Ekranına Git</button><!--Sadece yönlendirme yapıldığı için onClick fonksiyonunu boş bırakacağım.-->
+                </a>
+                </center>
+            </div>
+        </form>
+    </div>
+    <script src="./main.js"></script><!--kayitOl fonksiyonunun çalışabilmesi için main.js dosyasımı gösteriyorum.
+        src'den sonra nokta koymamın sebebi ise js dosyasının mevcut dosya olan kayitOlEkrani.html'nin bir üst klasöründe yer almasından kaynaklı-->
+</body>
+</html>

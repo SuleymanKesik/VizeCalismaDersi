@@ -1,0 +1,40 @@
+*{
+    margin: 0; /* default olarak boşluk olarak 0 px veriyoruz.*/
+    padding: 0; /* default olarak boşluk olarak 0 px veriyoruz.*/
+    font-family: Arial, Helvetica, sans-serif; /* yazının still'ini veriyoruz. */
+}
+body{
+    background: grey url(https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1017-15490.jpg?w=1060&t=st=1673042256~exp=1673042856~hmac=a115e9b4d9165223abaf46fd5b521786e31c03adaf951144f93955c292de5bd4);
+    background-size: cover;/*gerçek en boy oranını (varsa) koruyarak, hem genişliği hem de yüksekliği 
+    arka plan konumlandırma alanını tamamen kaplayacak şekilde en küçük boyuta ölçeklendirin*/
+    display: flex; /*bir temel esnek kapsayıcı kutusu oluşturur ve bir esnek biçimlendirme bağlamı oluşturmamızı sağlar*/
+    align-items: center; /*öğeleri ortalamamızı sağlıyor*/
+    justify-content: center; /*öğeleri ortalamamızı sağlıyor*/
+    min-height: 100vh; /*minimum olarak yüksekliği belirliyoruz*/
+}
+form{
+    background-color: bisque; /*formun arkaplanının rengini yazıyoruz*/
+    padding: 20px; /*boşlukları 20px uzunluğunda ayarlıyoruz*/
+    display: inline-flex; /*satırların içindeki esnekliği sağlıyoruz*/
+    flex-direction: column; /*sütunların yerleşmesini belirliyoruz.*/
+    align-items: center; /*öğelerin ortalanmasını sağlıyoruz*/
+    border-radius: 8px; /*Dış kenarlıkların kalınlığını ayarlıyoruz*/
+    box-shadow: 0 0 10px darkgray; /*kutuların gölgelendirmelerini ayarlıyoruz*/
+    width: 300px; /*Formun genişliği*/
+    height: 400px; /*Formun uzunluğu*/
+}
+form h1{
+    font-size: 30px; /*formun içinde yer alan h1 etiketli yapıların yazı boyutu*/
+    margin-bottom: 20px; /*formun içinde yer alan h1 etiketli yapıların alttan boşluğu*/
+}
+form input{
+    background: none; /*formun içinde yer alan input etiketli yapıların arkaplanı olmasın diyoruz.*/
+    text-align: center; /*formun içinde yer alan input etiketli yapıların yazı hizalamasını ortalıyoruz*/
+    padding: 10px; /*boşluk ayarı*/
+    margin: 5px; /*boşluk ayarı*/
+    border: solid 2px black; /*kenarlıkların rengini, stilini, genişliğini vb. ayarlamak için*/
+}
+.btn-success{color:#fff;background-color:#5cb85c;border-color:#4cae4c} /*butonun ayarları*/
+.btn-success:hover{color:#fff;background-color:#449d44;border-color:#398439} /*butonun üzerine mouse ile gelince nasıl birşey olsun*/
+.btn-primary{color:#fff;background-color:#337ab7;border-color:#2e6da4} /*butonun ayarları*/
+.btn-primary:focus{color:#fff;background-color:#286090;border-color:#122b40} /*butonun üzerine mouse ile gelince nasıl birşey olsun*/
